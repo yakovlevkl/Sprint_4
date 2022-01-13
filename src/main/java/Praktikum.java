@@ -8,9 +8,9 @@ public class Praktikum {
         String name = "Тимоти Шаламе";
         Account account = new Account(name);
         if (account.checkNameToEmboss()) {
-            System.out.println("Name: " + name + " is Valid.");
+            System.out.println("Name: [" + name + "] is Valid.");
         } else {
-            System.out.println("Name: " + name + " is Invalid.");
+            System.out.println("Name: [" + name + "] is Invalid.");
         }
     }
 }

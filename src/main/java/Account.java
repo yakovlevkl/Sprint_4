@@ -7,7 +7,8 @@ public class Account {
 
     public boolean checkNameToEmboss() {
         /*
-             Этот метод должен проверять, что сохранённая через конструктор строка соответствует требованиям.
+             Этот метод должен проверять, что сохранённая через конструктор строка
+             соответствует требованиям.
              Если строка удовлетворяет условиям, метод возвращает true, иначе — false.
              - в строке не меньше 3 и не больше 19 символов,
              - в строке есть только один пробел,
@@ -18,7 +19,11 @@ public class Account {
                 | this.name.length() > 19
                 | this.name.startsWith(" ")
                 | this.name.endsWith(" ")
-                | !this.name.contains(" "));
+                | !spaceControl());
     }
 
+    public boolean spaceControl() {
+        String[] arr = this.name.split(" ");
+        return arr.length == 2;
+    }
 }
