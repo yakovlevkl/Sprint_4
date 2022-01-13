@@ -28,6 +28,7 @@ public class AccountParamTest {
                 { "Тимоти Шаламе ", false},
                 { "Ти", false},
                 { "ТимотиШаламеТимотиШаламе", false},
+                { "Ти мо ти Шаламе", false},
         };
     }
 
