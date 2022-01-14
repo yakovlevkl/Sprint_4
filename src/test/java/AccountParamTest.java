@@ -12,7 +12,7 @@ import static org.junit.Assert.assertEquals;
 public class AccountParamTest {
     private final String name;
     private final Boolean status;
-    Account account;
+    private Account account;
 
     public AccountParamTest(String name, Boolean status) {
         this.name = name;
@@ -23,12 +23,17 @@ public class AccountParamTest {
     public static Object[] getStatus() {
         return new Object[][] {
                 { "Тимоти Шаламе", true},
+                { "Т а", true},
                 { "ТимотиШаламе", false},
+                { "ТимотиШаламе ", false},
+                { " ТимотиШаламе", false},
                 { " Тимоти Шаламе", false},
                 { "Тимоти Шаламе ", false},
                 { "Ти", false},
                 { "ТимотиШаламеТимотиШаламе", false},
                 { "Ти мо ти Шаламе", false},
+                { " ", false},
+                { null , false},
         };
     }
 
