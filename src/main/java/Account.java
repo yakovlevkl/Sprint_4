@@ -16,6 +16,6 @@ class Account {
          */
 
         if (this.name == null) { return false;}
-        return name.matches("(?=.{3,18}$)[a-zA-Zа-яА-Я]+\\s[a-zA-Zа-яА-Я]+");
+        return name.matches("(?=.{3,19}$)[a-zA-Zа-яА-Я]+\\s[a-zA-Zа-яА-Я]+");
     }
 }

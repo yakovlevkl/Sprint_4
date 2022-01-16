@@ -23,15 +23,15 @@ public class AccountParamTest {
     public static Object[] getStatus() {
         return new Object[][] {
                 { "Тимоти Шаламе", true},
+                { " Тимоти Шаламе", false},
+                { "Тимоти Шаламе ", false},
                 { "Т а", true},
                 { "ТимотиШаламе", false},
                 { "ТимотиШаламе ", false},
                 { " ТимотиШаламе", false},
-                { " Тимоти Шаламе", false},
-                { "Тимоти Шаламе ", false},
-                { "Ти", false},
-                { "ТимотиШаламеТимотиШаламе", false},
-                { "Ти мо ти Шаламе", false},
+                { "ТимотиШаламе ТимотиШ", false},
+                { "ТимотиШаламе Тимоти", true},
+                { "Тимо  тиШаламе", false},
                 { " ", false},
                 { null , false},
         };
